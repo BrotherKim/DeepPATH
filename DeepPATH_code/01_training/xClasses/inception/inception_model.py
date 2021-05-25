@@ -29,6 +29,7 @@ import re
 import tensorflow as tf
 
 from inception.slim import slim
+from resnet_v1.slim import slim
 
 FLAGS = tf.app.flags.FLAGS
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-prepro_image_dir_path="outputs/slides"
-CODE_DIR="/home/jangting/sources/DeepPATH/DeepPATH_code"
+#prepro_image_dir_path="outputs/slides"
+CODE_DIR="/write/here/sources/DeepPATH/DeepPATH_code"
 
 ### 0.1 Tile the svs slide images
 #python 00_preprocessing/0b_tileLoop_deepzoom4.py -s 299 -e 0 -j 32 -B 25 -o ${prepro_image_dir_path} "/home/jangting/dataset/TCGA-LUNG/data/*/*svs"
@@ -50,7 +50,7 @@ cd ${CODE_DIR}/01_training/xClasses \
 
 ## 1.2.2 transfer learning
 max_steps=100
-model='inception-v3'
+model='resnet_v1_50'
 #model='inception-v4'
 
 cd ${CODE_DIR}/01_training/xClasses \
