@@ -60,6 +60,10 @@ tf.app.flags.DEFINE_string('pretrained_model_checkpoint_path', '',
 tf.app.flags.DEFINE_integer('save_step_for_chekcpoint', 5000,
                            """Save checkpoints every n steps """)
 
+# CUSTOM Flag fot select model
+tf.app.flags.DEFINE_string('model', 'inception-v3',
+                           """train model""")
+
 
 # **IMPORTANT**
 # Please note that this learning rate schedule is heavily dependent on the
